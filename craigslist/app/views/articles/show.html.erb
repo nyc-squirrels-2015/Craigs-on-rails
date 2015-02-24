@@ -1,0 +1,4 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.content %> </p>
+<%= link_to 'Edit', edit_category_article_path(@category.id, @article.id) %>
+<%= link_to 'Delete', [@category, @article], method: :delete  %>

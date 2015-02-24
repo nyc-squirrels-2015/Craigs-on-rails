@@ -1,0 +1,6 @@
+<h1><%= @category.name %></h1>
+<!-- #list all articles under this category  -->
+<% @category.articles.each do |article| %>
+  <%= article.title %>
+<%end%>
+<%= link_to "Create Article", new_category_article_path(@category) %>

@@ -1,0 +1,12 @@
+<%= form_for [@category, @article] do |f| %>
+<div>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+<br>
+<div>
+  <%= f.label :content %>
+  <%= f.text_area :content, size: '60x6' %>
+</div>
+  <%= f.submit %>
+<% end %>
