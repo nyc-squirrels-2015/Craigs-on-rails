@@ -1,0 +1,32 @@
+<h1>Login: </h1>
+<div class="row">
+  <div class="two columns">
+  <%= form_tag('/login') do  %>
+    <%= label_tag :username %>
+    <%= text_field_tag :username %>
+  </div>
+  <div class="four columns">
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+  <%= submit_tag "Login" %>
+  </div>
+<% end %>
+</div>
+
+
+<h1>Or Signup: </h1>
+<%= form_tag('/signup') do %>
+  <%= label_tag :username %>
+  <%= text_field_tag :username %>
+
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+
+  <%= label_tag :password_confirmation %>
+  <%= password_field_tag :password_confirmation %>
+
+  <div>
+  <%= submit_tag "Signup" %>
+  </div>
+<% end %>
+

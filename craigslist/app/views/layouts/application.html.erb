@@ -7,6 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+      <div class="left-nav">
+       <%= link_to 'Add Category', new_category_path %>
+      </div>
+
+      <div class="right-nav">
+        <% if session[:user_id] != nil %>
+        <%= link_to "logout", logout_path %>
+        <% else %>
+        <%= link_to "login", login_path %>
+        <% end %>
+      </div>
+
+  </header>
 
 <%= yield %>
 

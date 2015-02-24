@@ -3,4 +3,5 @@
 <p><%= link_to category.name, category_path(category.id) %><p>
 <%= link_to 'Delete', category_path(category.id), method: :delete %>
 <% end %>
+<%= link_to 'Add Category', new_category_path %>
 
